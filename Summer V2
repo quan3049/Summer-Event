@@ -1,0 +1,16 @@
+getgenv().config = {
+    AutoRebirth = false,
+    Delay = 0.1, 
+    Optimize = true,
+    FPSCap = 60, 
+    TeleportCheckInterval = 5,
+    StopOnTitanic = false,
+    StopOnChance = {"100x", "25x"}
+    SpecificEggsToStopOn = {"Block Party Tier Eight 100x", "Block Party Tier Eight 25x"}, 
+    ToggleUI = false, --// 
+    AutoRaffle = false, 
+    TicketAmount =  10, 
+    URL = "https://discord.com/api/webhooks/1386223623286820944/aCQB9_cogY-SI2EvSJTgTme1XwgKV4uXY3JTMd-s726Y7SO2nWSXt8-QRHavdTcGMVbL", 
+    ServerHop = false 
+}
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Majkyy111/Event/refs/heads/main/BlockEvent.lua"))()
