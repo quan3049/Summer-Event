@@ -1,0 +1,19 @@
+getgenv().config = {
+    AutoRebirth = false, --// Turn auto rebirth off if false
+    Delay = 0.1, --// Delay between buying tiles
+    Optimize = true, --// Optimization
+    FPSCap = 60, --// What FPS to use
+    TeleportCheckInterval = 5, -- // How often to check whether near egg
+    StopOnTitanic = false, --// if true, will stop rebirthing when any Tier Five egg is present (ignores SpecificEggsToStopOn if true)
+    StopOnChance = {"100x", "25x",}, --// Valid options: "100x", "25x", "5x", "2x", "1x", if StopOnTitanic 
+    SpecificEggsToStopOn = {"Block Party Tier Eight 100x", "Block Party Tier Eight 25x"}, --// Same valid options as stoponchance just add block party and tier
+    ToggleUI = true, --// if false you can see what its doing
+    AutoRaffle = false, --// false -> wont do raffle
+    TicketAmount =  10, --// how many tickets to put into raffle, default 10 at a time
+    URL = "https://discord.com/api/webhooks/1396873039559397448/VrS5bPXDP07acgsk_ex-35U_3cZQD122QljT0Y5VL6bC7tiRVxesoIMMZMTgpCo6H1_I", --// Webhook url
+    ID = "", --// NUMERICAL DISCORD ID, NOT USERNAME
+    ServerHop = false, --// if under 50% it will first wait until you have 50% progress and then it will start serverhopping, will not rebirth if true
+    FastHatchTier6to8 = true --// if false it will only hatch fast and max amount on specified eggs
+    --// DO NOT USE SERVERHOP WITH MANY ACCOUNTS AT ONCE AS IT USES A LOT MORE CPU THAN JUST FARMING NORMALLY!!
+}
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Majkyy111/Event/refs/heads/main/BlockEvent.lua"))()
