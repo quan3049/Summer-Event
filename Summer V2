@@ -1,6 +1,6 @@
 --// SCRIPT SETTINGS
 getgenv().config = {
-    AutoRebirth = true, --// Turn auto rebirth off if false
+    AutoRebirth = flase, --// Turn auto rebirth off if false
     Delay = 0.1, --// Delay between buying tiles
     Optimize = true, --// Optimization
     FPSCap = 5, --// What FPS to use
