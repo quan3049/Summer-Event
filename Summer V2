@@ -1,16 +1,26 @@
 getgenv().config = {
-    AutoRebirth = false,
+    AutoRebirth = true, 
     Delay = 0.1, 
-    Optimize = true,
-    FPSCap = 60, 
-    TeleportCheckInterval = 5,
+    Optimize = true, 
+    FPSCap = 5, 
+    TeleportCheckInterval = 5, 
     StopOnTitanic = false,
-    StopOnChance = {"100x", "25x"}
+    StopOnChance = {"100x", "25x",}, 
     SpecificEggsToStopOn = {"Block Party Tier Eight 100x", "Block Party Tier Eight 25x"}, 
-    ToggleUI = false, --// 
+    ToggleUI = true, 
     AutoRaffle = false, 
     TicketAmount =  10, 
-    URL = "https://discord.com/api/webhooks/1386223623286820944/aCQB9_cogY-SI2EvSJTgTme1XwgKV4uXY3JTMd-s726Y7SO2nWSXt8-QRHavdTcGMVbL", 
-    ServerHop = false 
+    URL = "https://discord.com/api/webhooks/1396873039559397448/VrS5bPXDP07acgsk_ex-35U_3cZQD122QljT0Y5VL6bC7tiRVxesoIMMZMTgpCo6H1_I", 
+    ID = "", 
+    ServerHop = false, 
+    FastHatchTier6to8 = true --// if false it will only hatch fast and max amount on specified eggs 
+getgenv().AutoMail = {
+    ['Items'] = {
+        ["Shiny Flamingo Cat"] = { Class = "Pet", Amount = 1 },
+        ["Damage 8"] = { Class = "Potion", Amount = 2},
+        ["Tap Power 7"] = {Class = "Enchant", Amount = 6 },
+    },
+    ['Loop Interval'] = 60,
+    ['Users'] = {""},
 }
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Majkyy111/Event/refs/heads/main/BlockEvent.lua"))()
