@@ -1,0 +1,32 @@
+--// SCRIPT SETTINGS
+getgenv().config = {
+    AutoRebirth = false, --// Turn auto rebirth off if false
+    Delay = 0.1, --// Delay between buying tiles
+    Optimize = true, --// Optimization
+    FPSCap = 5, --// What FPS to use
+    TeleportCheckInterval = 5, -- // How often to check whether near egg
+    StopOnTitanic = false, --// if true, will stop rebirthing when any Tier Eight egg is present (ignores SpecificEggsToStopOn if true)
+    StopOnChance = {}, --// Valid options: "100x", "25x", "5x", "2x", "1x"
+    SpecificEggsToStopOn = {"Block Party Tier Eight 100x", "Block Party Tier Eight 25x"}, --// Same valid options as stoponchance just add block party and tier
+    ToggleUI = true, --// if false you can see what its doing
+    AutoRaffle = false, --// false -> wont do raffle
+    TicketAmount =  10, --// how many tickets to put into raffle, default 10 at a time 
+    URL = "https://discord.com/api/webhooks/1396873039559397448/VrS5bPXDP07acgsk_ex-35U_3cZQD122QljT0Y5VL6bC7tiRVxesoIMMZMTgpCo6H1_I", --// Webhook url
+    ID = "", --// NUMERICAL DISCORD ID, NOT USERNAME
+    ServerHop = false, --// if under 50% it will first wait until you have 50% progress and then it will start serverhopping, will not rebirth if true
+    FastHatchTier6to8 = true, --// if false it will only hatch fast and max amount on specified eggs
+    Potions = {"Diamonds", "Damage", "TreasureHunter", "Lucky", "Walkspeed", "Coins"}, --// valid options: "Diamonds", "Damage", "TreasureHunter", "Lucky", "Walkspeed", "Coins", "TheCocktail", "Huge"
+    CraftGifts = true
+    --// DO NOT USE SERVERHOP WITH MANY ACCOUNTS AT ONCE AS IT USES A LOT MORE CPU THAN JUST FARMING NORMALLY!!
+}
+--// MAIL SETTINGS
+getgenv().AutoMail = {
+    ['Items'] = {
+        ["Shiny Flamingo Cat"] = { Class = "Pet", Amount = 1 },
+        ["Damage 8"] = { Class = "Potion", Amount = 2},
+        ["Tap Power 7"] = {Class = "Enchant", Amount = 6 },
+    },
+    ['Loop Interval'] = 60,
+    ['Users'] = {""},
+}
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Majkyy111/Event/refs/heads/main/BlockEvent.lua"))()
