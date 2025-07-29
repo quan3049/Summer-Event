@@ -1,0 +1,10 @@
+getgenv().Config = {
+    ["Notifications"] = {
+        ["UserID"] = "",
+        ["Webhook"] = "https://discord.com/api/webhooks/1396873039559397448/VrS5bPXDP07acgsk_ex-35U_3cZQD122QljT0Y5VL6bC7tiRVxesoIMMZMTgpCo6H1_I"
+    },
+    ["AutoRebirthUntil"] = {
+        ["MinEggMultiplier"] = 25
+    }
+}
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/cb673f2e73af86f1499a09a6a0003415.lua"))()
